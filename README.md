@@ -1,17 +1,10 @@
-# BLACK TECH EMPOWER (Pty) Ltd — Website
+# One-screen landing page
 
-This is a simple static site ready for GitHub Pages.
+This folder contains a one-viewport landing page (no scrolling) for BLACK TECH EMPOWER. Replace the files in your GitHub Pages repo and the page will be live.
 
-## Quick deploy
-1. Create a new repo on GitHub (public). You can name it `black-tech-empower` or `black-tech-empower.github.io` (for user/org pages).
-2. Upload all files from this folder (or push with Git).
-3. Go to **Settings → Pages** and set **Branch** = `main` (or `master`), **Folder** = `/root`.
-4. Save. Your site will be live at the URL GitHub shows (refresh after a minute).
-
-## Custom domain (optional)
-- Add a DNS **CNAME** record pointing your domain to `<your-username>.github.io`.
-- In this repo, create a file named `CNAME` containing your domain, e.g. `www.example.co.za`.
-- Back in **Settings → Pages**, enforce HTTPS.
-
----
-© BLACK TECH EMPOWER (Pty) Ltd — Reg: 2025/688796/07.
+- Replace existing `index.html` and `styles.css` in the repo root (or in `/docs` if you publish from docs).
+- Keep `assets/logo.svg` in the `assets` folder.
+- Links:
+  - Email CTA goes to `ndimandezj@gmail.com`
+  - WhatsApp CTA uses `wa.me/27735904108`
+  - Brochure button expects `BLACK_TECH_EMPOWER_Service_Brochure.pdf` in the same folder (optional)
