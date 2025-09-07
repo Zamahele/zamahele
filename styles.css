@@ -607,11 +607,13 @@ body{min-height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helv
   color: var(--ink);
   display: block;
   margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .submission-summary small {
   color: var(--muted);
   font-size: 12px;
+  line-height: 1.4;
 }
 
 .submission-actions {
@@ -629,8 +631,11 @@ body{min-height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helv
   background: rgba(34, 197, 94, 0.1);
   border: 1px solid rgba(34, 197, 94, 0.3);
   color: var(--success);
-  margin-top: 8px;
+  margin: 2px;
   transition: all 0.3s ease;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .form-status .success button:hover {
@@ -638,12 +643,140 @@ body{min-height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helv
   transform: translateY(-1px);
 }
 
-/* Subtle animated glows */
-.bg{position:absolute;inset:auto;filter:blur(60px);opacity:.6;z-index:-1}
-.bg.a{width:42vw;height:42vw;min-width:320px;min-height:320px;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--glow1), transparent 60%);left:-12vw;top:-12vh;animation:float1 12s ease-in-out infinite}
-.bg.b{width:46vw;height:46vw;min-width:320px;min-height:320px;border-radius:50%;background:radial-gradient(circle at 70% 70%, var(--glow2), transparent 60%);right:-14vw;bottom:-18vh;animation:float2 14s ease-in-out infinite}
-@keyframes float1{0%{transform:translateY(0)}50%{transform:translateY(18px)}100%{transform:translateY(0)}}
-@keyframes float2{0%{transform:translateY(0)}50%{transform:translateY(-16px)}100%{transform:translateY(0)}}
+/* GitHub Pages Admin Panel Enhancements */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--edge);
+  border-radius: 12px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--glow1);
+  margin-bottom: 4px;
+}
+
+.stat-item span {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* External service status indicators */
+.external-status {
+  color: var(--muted) !important;
+  font-size: 11px !important;
+}
+
+.external-status::before {
+  content: "?? ";
+}
+
+/* Configuration panel styles */
+.modal-body h4 {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--edge);
+}
+
+.modal-body h4:first-child {
+  margin-top: 0;
+}
+
+.modal-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.modal-body ul li {
+  padding: 8px 12px;
+  margin: 4px 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modal-body code {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--edge);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  color: var(--glow1);
+}
+
+/* GitHub Pages indicator */
+.github-pages-indicator {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(var(--glow1), 0.1);
+  border: 1px solid rgba(var(--glow1), 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--glow1);
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.github-pages-indicator:hover {
+  opacity: 1;
+}
+
+.github-pages-indicator::before {
+  content: "?? ";
+}
+
+/* Development mode indicator */
+.development-indicator {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(var(--warning), 0.1);
+  border: 1px solid rgba(var(--warning), 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--warning);
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.development-indicator:hover {
+  opacity: 1;
+}
+
+.development-indicator::before {
+  content: "?? ";
+}
+
+/* Enhanced submission item styles */
+.submission-item:hover {
+  border-color: var(--glow1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
+}
 
 /* Responsive Design */
 @media (max-width: 968px) {
@@ -778,5 +911,41 @@ body{min-height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helv
   .admin-actions .btn {
     padding: 8px 12px;
     font-size: 12px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .submission-item:hover {
+    transform: none;
+  }
+  
+  .form-status .success button:hover {
+    transform: none;
+  }
+}
+
+/* Print styles for admin panel */
+@media print {
+  .admin-panel,
+  .submission-modal {
+    position: static;
+    background: white;
+    color: black;
+  }
+  
+  .modal-close,
+  .admin-actions,
+  .submission-actions {
+    display: none;
+  }
+  
+  .admin-stats {
+    border: 1px solid #ccc;
+  }
+  
+  .submission-item {
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
   }
 }
