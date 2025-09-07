@@ -6,10 +6,7 @@
     </linearGradient>
   </defs>
   <rect x="4" y="4" width="120" height="120" rx="16" fill="#0b1220"/>
-  <!-- power ring -->
   <circle cx="64" cy="64" r="34" fill="none" stroke="url(#g)" stroke-width="12" stroke-dasharray="180 120" stroke-linecap="round"/>
-  <!-- power stem -->
   <rect x="60" y="28" width="8" height="28" rx="4" fill="url(#g)"/>
-  <!-- uplift chevron -->
   <path d="M40 84 L60 64 L88 92" fill="none" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
