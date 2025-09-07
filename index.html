@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BLACK TECH EMPOWER — Software that moves business</title>
   <meta name="description" content="BLACK TECH EMPOWER (Pty) Ltd — .NET development, integrations, APIs, data streaming and CI/CD automation in South Africa." />
+  <!-- SEO enhancements -->
+  <meta name="keywords" content=".NET development, API integration, software development, South Africa, enterprise solutions" />
+  <meta property="og:title" content="BLACK TECH EMPOWER — Software that moves business" />
+  <meta property="og:description" content="Enterprise-grade .NET solutions, API integrations, data streaming and CI/CD automation in South Africa." />
+  <meta property="og:type" content="website" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -12,8 +18,29 @@
 </head>
 <body>
 
-  <!-- One-screen frame -->
-  <main class="frame" role="main">
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="assets/logo.svg" alt="BLACK TECH EMPOWER logo" />
+        <span>BLACK TECH EMPOWER</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="frame" role="main" id="home">
     <header class="topbar">
       <div class="brand">
         <img src="assets/logo.svg" alt="BLACK TECH EMPOWER logo" />
@@ -36,7 +63,7 @@
       </ul>
 
       <div class="cta">
-        <a class="btn primary" href="mailto:ndimandezj@gmail.com?subject=Project%20enquiry%20—%20BLACK%20TECH%20EMPOWER&body=Hi%20Zama%2C%20we'd%20like%20to%20discuss...">Email Zama</a>
+        <a class="btn primary" href="#contact">Get Quote</a>
         <a class="btn" href="https://wa.me/27735904108?text=Hi%20Zama%2C%20I'd%20like%20to%20chat%20about%20a%20project" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn ghost" href="BLACK_TECH_EMPOWER_Service_Brochure.pdf" target="_blank" rel="noopener">Brochure</a>
       </div>
@@ -56,8 +83,238 @@
     <div class="bg b" aria-hidden="true"></div>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Comprehensive .NET solutions for modern businesses</p>
+      
+      <div class="services-grid">
+        <div class="service-card" data-service="web-development">
+          <div class="service-icon">🚀</div>
+          <h3>Web Development</h3>
+          <p>Custom ASP.NET Core applications, MVC solutions, and modern web APIs built for scalability and performance.</p>
+          <ul class="service-tech">
+            <li>ASP.NET Core</li>
+            <li>Blazor</li>
+            <li>Entity Framework</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-service="api-integration">
+          <div class="service-icon">🔗</div>
+          <h3>API Integration</h3>
+          <p>Seamless integration between systems using REST APIs, WCF services, and modern integration patterns.</p>
+          <ul class="service-tech">
+            <li>REST APIs</li>
+            <li>WCF Services</li>
+            <li>Microservices</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-service="database-solutions">
+          <div class="service-icon">💾</div>
+          <h3>Database Solutions</h3>
+          <p>Robust database design, optimization, and integration with MS SQL Server and Oracle databases.</p>
+          <ul class="service-tech">
+            <li>MS SQL Server</li>
+            <li>Oracle</li>
+            <li>Data Modeling</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-service="data-streaming">
+          <div class="service-icon">📊</div>
+          <h3>Data Streaming</h3>
+          <p>Real-time data processing and streaming solutions using Apache Kafka and RabbitMQ.</p>
+          <ul class="service-tech">
+            <li>Apache Kafka</li>
+            <li>RabbitMQ</li>
+            <li>Event Sourcing</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-service="devops">
+          <div class="service-icon">⚙️</div>
+          <h3>DevOps & CI/CD</h3>
+          <p>Automated deployment pipelines, continuous integration, and infrastructure as code solutions.</p>
+          <ul class="service-tech">
+            <li>Azure DevOps</li>
+            <li>Docker</li>
+            <li>Azure Cloud</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-service="consulting">
+          <div class="service-icon">💡</div>
+          <h3>Technical Consulting</h3>
+          <p>Architecture reviews, technology strategy, and digital transformation consulting for enterprises.</p>
+          <ul class="service-tech">
+            <li>Architecture Design</li>
+            <li>Code Reviews</li>
+            <li>Strategy Planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <p class="section-subtitle">Recent projects and success stories</p>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <div class="placeholder-image">Enterprise ERP</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Enterprise ERP Integration</h3>
+            <p>Full-scale ERP system integration for a manufacturing company with 500+ employees. Integrated inventory management, HR, and financial systems.</p>
+            <div class="portfolio-tech">
+              <span>ASP.NET Core</span>
+              <span>MS SQL</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <div class="placeholder-image">Banking API</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Banking API Gateway</h3>
+            <p>Secure API gateway solution for a regional bank, handling 10k+ daily transactions with enterprise-grade security.</p>
+            <div class="portfolio-tech">
+              <span>WCF</span>
+              <span>Oracle</span>
+              <span>Azure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <div class="placeholder-image">Real-time Analytics</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Real-time Analytics Platform</h3>
+            <p>Live data streaming and analytics platform for e-commerce, processing millions of events daily with Kafka.</p>
+            <div class="portfolio-tech">
+              <span>Kafka</span>
+              <span>Blazor</span>
+              <span>Azure DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Ready to transform your business with cutting-edge .NET solutions?</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Discuss Your Project</h3>
+          <p>Whether you need a complete system overhaul or specific integrations, we're here to help you succeed.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:ndimandezj@gmail.com">ndimandezj@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">📱</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/27735904108" target="_blank">+27 73 590 4108</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="https://linkedin.com/in/zamagcwensa-ndimande" target="_blank">Zamagcwensa Ndimande</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project-type">
+              <option value="">Select a service</option>
+              <option value="web-development">Web Development</option>
+              <option value="api-integration">API Integration</option>
+              <option value="database-solutions">Database Solutions</option>
+              <option value="data-streaming">Data Streaming</option>
+              <option value="devops">DevOps & CI/CD</option>
+              <option value="consulting">Technical Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range</option>
+              <option value="under-50k">Under R50,000</option>
+              <option value="50k-100k">R50,000 - R100,000</option>
+              <option value="100k-250k">R100,000 - R250,000</option>
+              <option value="250k-500k">R250,000 - R500,000</option>
+              <option value="over-500k">Over R500,000</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Project Description *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn primary form-submit">Send Message</button>
+          
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include the enhanced JavaScript functionality -->
+  <script src="form-storage.js"></script>
+  <script src="enhanced-form.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
