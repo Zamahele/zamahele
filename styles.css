@@ -1,0 +1,29 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#ffffff}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e2e8f0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav a{margin-left:16px;text-decoration:none;color:#334155;font-weight:600}
+.logo{height:34px}
+.hero{padding:80px 0;background:radial-gradient(1200px 400px at 0% 0%, #f0f9ff 0, transparent 60%),radial-gradient(1200px 400px at 100% 0%, #f5f3ff 0, transparent 60%)}
+.hero h1{font-size:48px;line-height:1.1;margin:0 0 12px}
+.hero p{max-width:720px;color:#475569;font-size:18px}
+.badges{margin-top:16px;color:#64748b;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;color:#0f172a;text-decoration:none;font-weight:600}
+.btn.primary{background:#0ea5e9;color:#fff;border-color:#0284c7}
+.cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.section{padding:64px 0}
+.section.alt{background:#f8fafc}
+.section h2{font-size:28px;margin:0 0 20px}
+.muted{color:#64748b}
+.tiny{font-size:12px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:18px}
+.card.small{min-height:140px}
+.card h3{margin-top:0}
+.contact{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:start}
+label{display:block;font-weight:600;color:#334155;margin-bottom:8px}
+input,textarea{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}
+input:focus,textarea:focus{outline:2px solid #0ea5e94d;border-color:#0284c7}
+.footer{border-top:1px solid #e2e8f0;background:#fff;color:#64748b}
+.footer p{margin:0;padding:24px 0;text-align:center}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.hero h1{font-size:36px}}

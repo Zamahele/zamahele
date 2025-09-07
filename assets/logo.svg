@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect rx="10" width="64" height="64" fill="url(#g)"/>
+  <g fill="#fff" transform="translate(12,12)">
+    <path d="M20 12h8v8h-8zM8 24h8v8H8zM20 24h8v8h-8zM32 24h8v8h-8z"/>
+  </g>
+  <text x="80" y="42" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0f172a">BLACK TECH EMPOWER</text>
+</svg>
